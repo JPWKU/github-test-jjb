@@ -26,6 +26,3 @@
           github-hooks: true
           permit-all: true
           auto-close-on-fail: false
-          admin-list:
-            - jpwku
-
