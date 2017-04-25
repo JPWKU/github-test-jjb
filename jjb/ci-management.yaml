@@ -16,13 +16,11 @@
           url: git@github.com:lfit/github-test-jjb.git
           credentials-id: 'odpi-jenkins-test-jjb'
           refspec: '+refs/pull/*:refs/remotes/origin/pr/*'
-          branches:
-            - '+refs/heads/*:refs/remotes/origin/* +refs/pull/*:refs/remotes/origin/pr/*+refs/heads/*:refs/remotes/origin/* +refs/pull/*:refs/remotes/origin/pr/*'
 
     triggers:
-      - github
       - github-pull-request:
           build-desc-template: "Test JJB with GHPRB"
+          cron: 'H/5 * * * *'
           trigger-phrase: 'retest this please'
           only-trigger-phrase: false
           github-hooks: true
