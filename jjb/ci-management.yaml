@@ -28,3 +28,5 @@
           auto-close-on-fail: false
           white-list:
             - jpwku
+          admin-list:
+            - jpwku
