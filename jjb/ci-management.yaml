@@ -9,7 +9,7 @@
     name: 'odpi-test-jjb'
     properties:
       - github:
-          url: https://github.com/lfit/github-test-jjb
+          url: https://github.com/lfit/github-test-jjb/
 
     scm:
       - git:
