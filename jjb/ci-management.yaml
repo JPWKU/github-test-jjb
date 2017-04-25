@@ -27,4 +27,4 @@
           permit-all: true
           auto-close-on-fail: false
           white-list:
-            - JPWKU
+            - jpwku
