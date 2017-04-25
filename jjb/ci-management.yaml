@@ -23,11 +23,11 @@
       - github-pull-request:
           build-desc-template: "Test JJB with GHPRB"
           trigger-phrase: 'retest this please'
-          only-trigger-phrase: true
+          only-trigger-phrase: false
           github-hooks: true
           permit-all: true
           auto-close-on-fail: false
           admin-list:
-            - JPWKU
+            - jpwku
           white-list:
-            - JPWKU
+            - jpwku
