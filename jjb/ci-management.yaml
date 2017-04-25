@@ -20,6 +20,7 @@
             - '+refs/heads/*:refs/remotes/origin/* +refs/pull/*:refs/remotes/origin/pr/*+refs/heads/*:refs/remotes/origin/* +refs/pull/*:refs/remotes/origin/pr/*'
 
     triggers:
+      - github
       - github-pull-request:
           build-desc-template: "Test JJB with GHPRB"
           trigger-phrase: 'retest this please'
@@ -29,5 +30,4 @@
           auto-close-on-fail: false
           admin-list:
             - jpwku
-          white-list:
-            - jpwku
+
