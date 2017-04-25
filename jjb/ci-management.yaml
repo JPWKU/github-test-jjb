@@ -14,10 +14,8 @@
     scm:
       - git:
           url: git@github.com:lfit/github-test-jjb.git
-          credentials-id: 'lfit-github-test-integration'
-          branches:
-            - +refs/pull/*:refs/remotes/origin/pr/*
-          timeout: 20
+          credentials-id: 'odpi-jenkins-test-jjb'
+          refspec: '+refs/pull/*:refs/remotes/origin/pr/*'
 
     triggers:
       - github-pull-request:
